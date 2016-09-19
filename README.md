@@ -3,7 +3,7 @@ cowboy_hello_world
 
 An Erlang/Cowboy web application demo created from scratch using rebar3 build tool
 
-(inspired from [this tutorial "Erlang, Rebar3, and Cowboy"](https://www.themoorecollective.com/articles/2015/12/09/Erlang,%20Rebar3,%20and%20Cowboy))
+(inspired from [this tutorial "Erlang, Rebar3, and Cowboy"](https://www.themoorecollective.com/articles/2015/12/09/Erlang,%20Rebar3,%20and%20Cowboy) with small updates )
 
 
 Software used
@@ -13,13 +13,13 @@ Erlang ([Erlang/OTP 19](https://www.erlang-solutions.com/resources/download.html
 
 Cowboy ([Master branch](https://github.com/ninenines/cowboy))
 
-Rebar3 ([http://www.rebar3.org])
+Rebar3 ([http://www.rebar3.org](http://www.rebar3.org))
 
 
 Create and build
 -----
 
-	1. Create empty release and application
+	1. Create empty Erlang release and application with Rebar3
 
 		$ rebar3 new release cowboy_hello_world 
 
@@ -31,9 +31,11 @@ Create and build
 		$ vi rebar.config 
 
 		2.1. Add Cowboy dependency to deps section of rebar.config 
+			'''
 			{deps, [
 			        {cowboy, {git, "https://github.com/ninenines/cowboy", {branch, "master"}}}
 			]}.
+			'''
 
 		2.2. Add rebar3_run dependency to plugins section of rebar.config 
 			{plugins, [rebar3_run]}.

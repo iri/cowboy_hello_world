@@ -106,4 +106,6 @@ Create and build
 	10. Start release
 
 		$ _build/default/rel/cowboy_hello_world/bin/cowboy_hello_world console
+		
+		Open http://localhost:8080 in browser
 

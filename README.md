@@ -60,7 +60,7 @@ Create and build
 		                        {"/", toppage_handler, []}
 		                ]}
 		        ]),
-		        {ok, _} = cowboy:start_clear(http, 100, [{port, 8080}], #{
+		        {ok, _} = cowboy:start_clear(http, [{port, 8080}], #{
 		                env => #{dispatch => Dispatch}
 		        }),
 		        cowboy_hello_world_sup:start_link().
@@ -88,7 +88,7 @@ Create and build
 
 	7. Run
 
-		$ rebar3 run
+		$ rebar3 shell
 
 		Open http://localhost:8080 in browser
 
